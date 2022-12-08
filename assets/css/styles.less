@@ -6,6 +6,11 @@
 @neutral-color6:hsl(189, 41%, 97%);
 @neutral-color6:hsl(0, 0%, 100%);
 
+@margin_box: 15px 15px 15px 0;
+@border_radius: 15px;
+@width: 45%;
+@height: @width + 45%;
+
 .header{
     color: @neutral-color2;
     text-align: center;
@@ -21,10 +26,23 @@ body{
     background-color: @neutral-color6;
     margin-left: auto;
     margin-right: auto;
-    border-radius: 15px;
+    border-radius: @border_radius;
     .output_box{
-        width: 40%;
-        height: 280px;
+        width: @width;
+        height: @height;
         background-color: @neutral-color2;
+        float: right;
+        margin: @margin_box;
+        border-radius: @border_radius;
+    }
+    .input_box{
+        border: 1px solid #000;
+        width: @width;
+        height: @height;
+        margin: @margin_box;
+        margin-left: 15px;
+        border-radius: @border_radius;
+        float: left;
+
     }
 }
