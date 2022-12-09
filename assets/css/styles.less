@@ -4,7 +4,7 @@
 @neutral-color4:hsl(184, 14%, 56%);
 @neutral-color5:hsl(185, 41%, 84%);
 @neutral-color6:hsl(189, 41%, 97%);
-@neutral-color6:hsl(0, 0%, 100%);
+@neutral-color7:hsl(0, 0%, 100%);
 
 @margin_box: 15px 15px 15px 0;
 @border_radius: 15px;
@@ -29,7 +29,7 @@ body{
 .container{
     width: 600px;
     height: 300px;
-    background-color: @neutral-color6;
+    background-color: @neutral-color7;
     margin-left: auto;
     margin-right: auto;
     border-radius: @border_radius;
@@ -55,6 +55,20 @@ body{
             padding: 15px;
              label{
                 display: block;
+                color: @neutral-color3;
+                font-size: 0.75rem;
+             }
+             input::-webkit-outer-spin-button,
+             input::-webkit-inner-spin-button {
+                -webkit-appearance: none;
+                 margin: 0;
+             }
+             #bill{
+                width: 85%;
+                height: 30px;
+                text-align: left;
+                background-color: @neutral-color6;
+                border: none;
              }
              
          }
