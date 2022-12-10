@@ -40,9 +40,9 @@ body{
         float: right;
         margin: @margin_box;
         border-radius: @border_radius;
+        color: @neutral-color7;
     }
     .input_box{
-        border: 1px solid #000;
         width: @width;
         height: @height;
         margin: @margin_box;
@@ -115,16 +115,27 @@ body{
                 background-color:@neutral-color2;
                 border: none;
                 color: white;
-                width: 65px;
-                height: 30px;
+                width: 70px;
+                height: 35px;
                 text-decoration: none;
                 margin: 4px 2px;
                 cursor: pointer;
+                border-radius: 5px;
             }
             #custom{
-                width: 50px;
-                height: 25px;
+                width: 60px;
+                height: 35px;
+                background-color: @neutral-color6;
+                font-size: 0.80rem;
+                letter-spacing: 2px;
                 text-align: center;
+                border-radius: 5px;
+                font-weight: 700;
+                padding-right:10px;
+                border: none;
+            }
+            #custom:focus{
+               outline: 0;
             }
          }
     }

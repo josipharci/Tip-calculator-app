@@ -1,3 +1,10 @@
+@font-face {
+  font-family: 'Space Mono';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/spacemono/v12/i7dMIFZifjKcF5UAWdDRaPpZYFI.ttf) format('truetype');
+}
 .header {
   color: hsl(183, 100%, 15%);
   text-align: center;
@@ -6,6 +13,8 @@
 }
 body {
   background-color: hsl(185, 41%, 84%);
+  font-family: 'Space Mono', monospace;
+  font-weight: 700;
 }
 .container {
   width: 600px;
@@ -22,9 +31,9 @@ body {
   float: right;
   margin: 15px 15px 15px 0;
   border-radius: 15px;
+  color: hsl(0, 0%, 100%);
 }
 .container .input_box {
-  border: 1px solid #000;
   width: 45%;
   height: 90%;
   margin: 15px 15px 15px 0;
@@ -32,8 +41,96 @@ body {
   border-radius: 15px;
   float: left;
 }
-.container .input_box .from_content {
+.container .input_box .form_content {
+  position: relative;
   width: 100%;
-  height: 100px;
+  height: 50px;
   padding: 15px;
+  padding-bottom: 0;
+}
+.container .input_box .form_content label {
+  display: block;
+  color: hsl(186, 14%, 43%);
+  font-size: 0.75rem;
+  padding-bottom: 5px;
+}
+.container .input_box .form_content input {
+  color: hsl(183, 100%, 15%);
+  font-weight: 700;
+  padding-right: 10px;
+}
+.container .input_box .form_content input:focus {
+  outline: 0;
+}
+.container .input_box .form_content input::-webkit-outer-spin-button,
+.container .input_box .form_content input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+.container .input_box .form_content #bill {
+  width: 85%;
+  height: 30px;
+  text-align: left;
+  background-color: hsl(189, 41%, 97%);
+  border: none;
+  text-align: right;
+  font-size: 1.3rem;
+}
+.container .input_box .form_content #placeholder {
+  position: absolute;
+  top: 35px;
+  left: 25px;
+  font-size: 1.4rem;
+  font-family: 'Space Mono', monospace;
+  color: hsl(185, 41%, 84%);
+}
+.container .input_box .form_content #numberPeople {
+  width: 85%;
+  height: 30px;
+  text-align: left;
+  background-color: hsl(189, 41%, 97%);
+  border: none;
+  text-align: right;
+  font-size: 1.3rem;
+}
+.container .input_box .form_content #placeholder2 {
+  position: absolute;
+  top: 35px;
+  left: 25px;
+  font-size: 1.4rem;
+  font-family: 'Space Mono', monospace;
+  color: hsl(185, 41%, 84%);
+}
+.container .input_box #select_container {
+  height: 100px;
+}
+.container .input_box #select_container #five,
+.container .input_box #select_container #ten,
+.container .input_box #select_container #fifteen,
+.container .input_box #select_container #twenty-five,
+.container .input_box #select_container #fifty {
+  background-color: hsl(183, 100%, 15%);
+  border: none;
+  color: white;
+  width: 70px;
+  height: 35px;
+  text-decoration: none;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+.container .input_box #select_container #custom {
+  width: 60px;
+  height: 35px;
+  background-color: hsl(189, 41%, 97%);
+  font-size: 0.8rem;
+  letter-spacing: 2px;
+  text-align: center;
+  border-radius: 5px;
+  font-weight: 700;
+  padding-right: 10px;
+  border: none;
+}
+.container .input_box #select_container #custom:focus {
+  outline: 0;
 }
