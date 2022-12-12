@@ -33,6 +33,43 @@ body {
   border-radius: 15px;
   color: hsl(0, 0%, 100%);
 }
+.container .output_box .output_content {
+  height: 50px;
+  margin: 25px;
+}
+.container .output_box #text-left {
+  float: left;
+  width: 40%;
+  font-size: 0.7rem;
+  padding-left: 5px;
+  padding-top: 10px;
+  margin: 0;
+}
+.container .output_box #text-left span {
+  font-size: 0.75rem;
+  color: hsl(184, 14%, 56%);
+}
+.container .output_box #text-right {
+  float: right;
+  text-align: right;
+  width: 50%;
+  font-size: 1.8rem;
+  margin: 0;
+  color: hsl(172, 67%, 45%);
+}
+.container .output_box #button-reset {
+  text-align: center;
+  padding-top: 40px;
+}
+.container .output_box #reset {
+  width: 100%;
+  padding: 10px 12px;
+  border-radius: 5px;
+  background-color: hsl(172, 67%, 45%);
+  color: #000;
+  font-weight: 700;
+  border: none;
+}
 .container .input_box {
   width: 45%;
   height: 90%;
@@ -56,6 +93,7 @@ body {
 }
 .container .input_box .form_content input {
   color: hsl(183, 100%, 15%);
+  font-family: 'Space Mono', monospace;
   font-weight: 700;
   padding-right: 10px;
 }

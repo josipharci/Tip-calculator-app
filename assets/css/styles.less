@@ -42,32 +42,38 @@ body{
         border-radius: @border_radius;
         color: @neutral-color7;
          .output_content{
-            height: 100px;
+            height: 50px;
+            margin: 25px;
          }
+         
          #text-left{
             float: left;
-            width: 30%;
-            font-size: 0.8rem;
+            width: 40%;
+            font-size: 0.7rem;
             padding-left: 5px;
-            padding-top: 15px;
+            padding-top: 10px;
             margin: 0;
              span{
                font-size: 0.75rem;
+               color: @neutral-color4;
              }
          }
          #text-right{
             float: right;
-            width: 60%;
-            font-size: 2.5rem;
+            text-align: right;
+            width: 50%;
+            font-size: 1.8rem;
             margin: 0;
             color: @primary-color;
          }
          #button-reset{
             text-align: center;
+            padding-top: 40px;
          }
          #reset{
-            width: 200px;
-            padding: 6px 12px;
+            width: 100%;
+            padding: 10px 12px;
+            border-radius: 5px;
             background-color: @primary-color;
             color: #000;
             font-weight: @font-weight;
@@ -95,6 +101,7 @@ body{
              }
              input{
                 color: @neutral-color2;
+                font-family: @font-family;
                 font-weight: 700;
                 padding-right:10px;
              }
@@ -172,4 +179,6 @@ body{
          }
     }
 }
+
+
 
