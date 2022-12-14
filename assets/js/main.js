@@ -1,17 +1,29 @@
-const bill = document.getElementById('bill');
-const numberPeople = document.getElementById('numberPeople');
-const five = document.getElementById('five');
-const ten = document.getElementById('ten');
-const fifteen= document.getElementById('fifteen');
-const twentyfive = document.getElementById('twenty-five');
-const fifty = document.getElementById('fifty');
-const custom = document.getElementById('custom');
-const total = document.getElementById('total');
-const tipAmount = document.getElementById('tipAmount');
-const reset = document.getElementById('reset');
+
+const num1 = document.getElementById("bill");
+const num2 = document.getElementById("numberPeople");
+const num3 = document.getElementById("tips");
+const output1 = document.getElementById("tipAmount");
+const output2 = document.getElementById("total");
+const sub = document.getElementById("Enter");
 
 
-function input{
-
+function addTip() {
+    let tip = document.getElementById("tips");
+  
+    tip.forEach((item) => {
+      item.addEventListener("click", (event) => {
+        console.log(item.value);
+      });
+    });
 }
+
+function task1(a,b,c){
+    var a = num1.value;
+    var b = num2.value;
+    var c = num3.value / 100;
+    var x = a / b * c ;
+    output1.innerText = '$' + x;
+}
+
+sub.addEventListener('click',task1);
 

@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" type="text/css" src="assets/css/style.css">
     <link rel="stylesheet/less" type="text/css" href="assets/css/styles.less" />
     <link rel="stylesheet/less" type="text/css" href="assets/css/media-query.less" />
     <title>Document</title>
@@ -12,8 +12,8 @@
 <body>
     <h2 class="header">SPLI <br> TEER</h2>
     <div class="container">
-        <div class="input_box">
-            <form id="Form">
+        <div class="input_box" >
+            <form id="form">
                 <div class="form_content" id="bill_container">
                     <label for="bill">Bill</label>
                     <input type="number" id="bill">
@@ -21,29 +21,30 @@
                 </div>
                 <div class="form_content" id="select_container">
                     <label for="select_tip">Select Tip %</label>
-                    <input type="button" id="five" value="5%">
-                    <input type="button" id="ten" value="10%">
-                    <input type="button" id="fifteen" value="15%">
-                    <input type="button" id="twenty-five" value="25%">
-                    <input type="button" id="fifty" value="50%">
-                    <input type="number" id="custom" placeholder="Custom">
+                    <input type="button" class="five" id="tips"  value="5">
+                    <input type="button" class="ten" id="tips"  value="10">
+                    <input type="button" class="fifteen" id="tips"  value="15">
+                    <input type="button" class="twenty-five"  id="tips" value="25">
+                    <input type="button" class="fifty" id="tips"  value="50">
+                    <input type="number" class="custom" id="tips" placeholder="Custom" value="">
                 </div>
                 <div class="form_content" id="numPeople_container">
                     <label for="numofPeople">Number of People</label>
                     <input type="number" id="numberPeople">
                     <span id="placeholder2"><img src="assets/images/icon-person.svg" alt="icon2"></span>
                 </div>
+                <input type="button"  value="submit" id="Enter">
             </form>
-
+            
         </div>
         <div class="output_box">
             <div class="output_content" id="tip_amount">
-                <p id="text-left">Tip Amount <br><span>/person</span></p>
-                <p id="text-right tipAmount">$0.00</p>
+                <p class="text-left">Tip Amount <br><span>/person</span></p>
+                <span class="text-right" id="tipAmount">$0.00</span>
             </div>
             <div class="output_content" id="total">
-                <p id="text-left">Total <br><span>/person</span></p>
-                <p id="text-right total">$0.00</p>
+                <p class="text-left">Total <br><span>/person</span></p>
+                <span class="text-right" id="total">$0.00</span>
             </div>
             <div class="output_content" id="button-reset">
                 <input type="button" value="Reset" id="reset">
@@ -53,7 +54,7 @@
     </div>
 
 
-<script type="javascript" src="assets/js/main.js"></script>
+<script src="assets/js/main.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/less" ></script>
 </body>
 </html>
