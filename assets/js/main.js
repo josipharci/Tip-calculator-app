@@ -6,9 +6,10 @@ const output2 = document.getElementById("total_a");
 const sub = document.getElementById("Enter");
 const num3 = document.getElementById("custom");
 
+
 function myFunction(val) {
     document.getElementById('custom').value = val;
-  }
+}
 
 function task(a,b,c){
     var a = num1.value;
