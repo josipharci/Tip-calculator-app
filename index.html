@@ -35,7 +35,7 @@
                     <input type="number" id="numberPeople" onkeyup="sendform(this.value)">
                     <span id="placeholder2"><img src="assets/images/icon-person.svg" alt="icon2"></span>
                 </div>
-                <input type="button"  value="submit" id="Enter">
+                <input type="button"  value="submit" id="Enter" style="visibility: hidden;">
             </form>
             
         </div>
@@ -50,17 +50,13 @@
                 <span class="text-right" id="total_a">$0.00</span>
             </div>
             <div class="output_content" id="button-reset">
-                <input type="button" value="Reset" id="reset" onclick="reset()">
+                <input type="button" value="Reset" id="reset" onclick="clearResult()">
             </div>
         </div>
     </div>
 
     <script>
-        function sendform(inputvalue){
-        if (document.getElementById("bill").value !== "" && 
-         document.getElementById("numberPeople").value !== "") {
-         document.getElementById("form").submit("Enter");
-        }}
+       
       </script>
 <script src="assets/js/main.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/less" ></script>
