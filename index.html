@@ -22,21 +22,22 @@
                 </div>
                 <div class="form_content" id="select_container">
                     <label for="select_tip">Select Tip %</label>
-                    <button type="button" name="btn-value" id="btn" class="fetchbutton" value="5" onclick="myFunction(this.value)">5</button>
-                    <button type="button" name="btn-value" id="btn" class="fetchbutton" value="10" onclick="myFunction(this.value)">10</button>
-                    <button type="button" name="btn-value" id="btn" class="fetchbutton" value="15" onclick="myFunction(this.value)">15</button>
-                    <button type="button" name="btn-value" id="btn" class="fetchbutton" value="25" onclick="myFunction(this.value)">25</button>
-                    <button type="button" name="btn-value" id="btn" class="fetchbutton" value="50" onclick="myFunction(this.value)">50</button>
+                    <input type="button" name="btn-value" id="btn" class="fetchbutton" value="5" onclick="myFunction(this.value),onClick(event)">
+                    <input type="button" name="btn-value" id="btn" class="fetchbutton" value="10" onclick="myFunction(this.value),onClick(event)">
+                    <input type="button" name="btn-value" id="btn" class="fetchbutton" value="15" onclick="myFunction(this.value),onClick(event)">
+                    <input type="button" name="btn-value" id="btn" class="fetchbutton" value="25" onclick="myFunction(this.value),onClick(event)">
+                    <input type="button" name="btn-value" id="btn" class="fetchbutton" value="50" onclick="myFunction(this.value),onClick(event)">
                     <input  type="number" name="btn-value" id="custom" class="custom"  placeholder="Custom" value="">
                 </div>
                 
                 <div class="form_content" id="numPeople_container">
                     <label for="numofPeople">Number of People</label>
-                    <input type="number" id="numberPeople">
+                    <input type="number" id="numberPeople" onkeyup="sendform(this.value)">
                     <span id="placeholder2"><img src="assets/images/icon-person.svg" alt="icon2"></span>
                 </div>
                 <input type="button"  value="submit" id="Enter">
             </form>
+            
         </div>
 
         <div class="output_box">
@@ -49,12 +50,18 @@
                 <span class="text-right" id="total_a">$0.00</span>
             </div>
             <div class="output_content" id="button-reset">
-                <input type="button" value="Reset" id="reset">
+                <input type="button" value="Reset" id="reset" onclick="reset()">
             </div>
         </div>
     </div>
 
-
+    <script>
+        function sendform(inputvalue){
+        if (document.getElementById("bill").value !== "" && 
+         document.getElementById("numberPeople").value !== "") {
+         document.getElementById("form").submit("Enter");
+        }}
+      </script>
 <script src="assets/js/main.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/less" ></script>
 </body>
