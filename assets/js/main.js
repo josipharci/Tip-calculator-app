@@ -32,15 +32,7 @@ function onClick(btn){
     btn.target.style.Color = '#000';
   }
 
-  function clearResult(){
-    output1.innerText = '$0.00';
-    output2.innerText = '$0.00';
-    num1.value = '';
-    num2.value = '';
-    num3.value = '';
-  }
-  
-  reset.addEventListener('click' , clearResult);
+ 
 
   function sendform(inputvalue){
     if (document.getElementById("bill").value !== "" && 
