@@ -6,7 +6,8 @@ const output2 = document.getElementById("total_a");
 const sub = document.getElementById("Enter");
 const num3 = document.getElementById("custom");
 const reset = document.getElementById("reset");
-const btn = document.getElementById("btn");
+const ErrorNum = document.getElementById("ErrorNum");
+
 
 
 
@@ -15,6 +16,7 @@ function myFunction(val) {
 }
 
 function task(a,b,c){
+
     var a = num1.value;
     var b = num2.value;
     var c = num3.value / 100;
@@ -34,8 +36,10 @@ function onClick(btn){
 
  
 
-  function sendform(inputvalue){
+function sendform(inputvalue){
     if (document.getElementById("bill").value !== "" && 
      document.getElementById("numberPeople").value !== "" && document.getElementById("custom").value !== "") {
      document.getElementById("Enter").click();
-}}
+    }
+}
+
