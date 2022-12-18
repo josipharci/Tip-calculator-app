@@ -37,7 +37,7 @@ body {
   height: 50px;
   margin: 25px;
 }
-.container .output_box #text-left {
+.container .output_box .text-left {
   float: left;
   width: 40%;
   font-size: 0.7rem;
@@ -45,11 +45,11 @@ body {
   padding-top: 10px;
   margin: 0;
 }
-.container .output_box #text-left span {
+.container .output_box .text-left span {
   font-size: 0.75rem;
-  color: hsl(184, 14%, 56%);
+  color: hsl(186, 14%, 56%);
 }
-.container .output_box #text-right {
+.container .output_box .text-right {
   float: right;
   text-align: right;
   width: 50%;
@@ -95,7 +95,8 @@ body {
   color: hsl(183, 100%, 15%);
   font-family: 'Space Mono', monospace;
   font-weight: 700;
-  padding-right: 10px;
+  padding: 2px 15px;
+  border-radius: 5px;
 }
 .container .input_box .form_content input:focus {
   outline: 0;
@@ -112,11 +113,16 @@ body {
   background-color: hsl(189, 41%, 97%);
   border: none;
   text-align: right;
-  font-size: 1.3rem;
+  font-size: 1.15rem;
+}
+.container .input_box .form_content #bill:focus {
+  border: 2px solid;
+  border-color: hsl(186, 14%, 56%);
+  border-radius: 5px;
 }
 .container .input_box .form_content #placeholder {
   position: absolute;
-  top: 35px;
+  top: 37px;
   left: 25px;
   font-size: 1.4rem;
   font-family: 'Space Mono', monospace;
@@ -129,11 +135,22 @@ body {
   background-color: hsl(189, 41%, 97%);
   border: none;
   text-align: right;
-  font-size: 1.3rem;
+  font-size: 1.15rem;
+}
+.container .input_box .form_content #numberPeople:focus {
+  border: 2px solid;
+  border-color: hsl(186, 14%, 56%);
+  border-radius: 5px;
+}
+.container .input_box .form_content #ErrorNum {
+  color: hsl(0, 100%, 50%);
+  font-size: 0.6rem;
+  float: right;
+  padding-right: 10px;
 }
 .container .input_box .form_content #placeholder2 {
   position: absolute;
-  top: 35px;
+  top: 37px;
   left: 25px;
   font-size: 1.4rem;
   font-family: 'Space Mono', monospace;
@@ -142,33 +159,41 @@ body {
 .container .input_box #select_container {
   height: 100px;
 }
-.container .input_box #select_container #five,
-.container .input_box #select_container #ten,
-.container .input_box #select_container #fifteen,
-.container .input_box #select_container #twenty-five,
-.container .input_box #select_container #fifty {
+.container .input_box #select_container .fetchbutton {
   background-color: hsl(183, 100%, 15%);
   border: none;
   color: white;
-  width: 70px;
+  width: 75px;
   height: 35px;
   text-decoration: none;
   margin: 4px 2px;
   cursor: pointer;
   border-radius: 5px;
+  font-weight: 700;
 }
-.container .input_box #select_container #custom {
-  width: 60px;
-  height: 35px;
+.container .input_box #select_container .fetchbutton:hover {
+  background-color: hsl(185, 41%, 84%);
+  color: #000;
+}
+.container .input_box #select_container .custom {
+  width: 53px;
+  height: 33px;
   background-color: hsl(189, 41%, 97%);
   font-size: 0.8rem;
-  letter-spacing: 2px;
+  letter-spacing: 1.1px;
   text-align: center;
   border-radius: 5px;
   font-weight: 700;
   padding-right: 10px;
   border: none;
 }
-.container .input_box #select_container #custom:focus {
-  outline: 0;
+.container .input_box #select_container .custom:focus {
+  border: 2px solid;
+  border-color: hsl(186, 14%, 56%);
+  border-radius: 5px;
+}
+.attribution {
+  text-align: center;
+  font-size: 14px;
+  margin-top: 20px;
 }
