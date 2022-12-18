@@ -13,6 +13,7 @@ const NumberError = document.getElementById("ErrorNum");
 
 function myFunction(val) {
     document.getElementById('custom').value = val;
+    document.getElementById('custom').style.color = "rgba(0, 0, 0, 0.0)";
 }
 
 function task(a,b,c){
