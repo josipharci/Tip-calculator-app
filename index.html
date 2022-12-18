@@ -18,7 +18,6 @@
                 <div class="form_content" id="bill_container">
                     <label for="bill">Bill</label>
                     <input type="number" id="bill" placeholder="0">
-                    <span id="ErrorNum"></span>
                     <span id="placeholder"><img src="assets/images/icon-dollar.svg" alt="icon"></span>
                 </div>
                 <div class="form_content" id="select_container">
@@ -32,9 +31,8 @@
                 </div>
                 
                 <div class="form_content" id="numPeople_container">
-                    <label for="numofPeople">Number of People</label>
+                    <label for="numofPeople">Number of People <span id="ErrorNum"></span></label>
                     <input type="number" id="numberPeople" onkeyup="sendform(this.value)" placeholder="0">
-                    <span id="ErrorNum"></span>
                     <span id="placeholder2"><img src="assets/images/icon-person.svg" alt="icon2"></span>
                 </div>
                 <input type="button"  value="submit" id="Enter" style="visibility: hidden ;">

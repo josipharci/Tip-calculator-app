@@ -1,7 +1,7 @@
 @primary-color: hsl(172, 67%, 45%);
 @neutral-color2:hsl(183, 100%, 15%);
 @neutral-color3:hsl(186, 14%, 43%);
-@neutral-color4:hsl(184, 14%, 56%);
+@neutral-color4:hsl(186, 14%, 56%);
 @neutral-color5:hsl(185, 41%, 84%);
 @neutral-color6:hsl(189, 41%, 97%);
 @neutral-color7:hsl(0, 0%, 100%);
@@ -126,7 +126,7 @@ body{
                 font-size: 1.15rem;
              }
              #bill:focus{
-               border: 1px solid;
+               border: 2px solid;
                border-color: @neutral-color4;
                border-radius: 5px;
              }
@@ -148,9 +148,15 @@ body{
                 font-size: 1.15rem;
              }
              #numberPeople:focus{
-               border: 1px solid;
+               border: 2px solid;
                border-color: @neutral-color4;
                border-radius: 5px;
+             }
+             #ErrorNum{
+               color: hsl(0, 100%, 50%);
+               font-size: 0.6rem;
+               float: right;
+               padding-right: 10px;
              }
              #placeholder2{
                 position: absolute;
@@ -192,7 +198,7 @@ body{
                 border: none;
             }
             .custom:focus{
-               border: 1px solid;
+               border: 2px solid;
                border-color: @neutral-color4;
                border-radius: 5px;
             }
